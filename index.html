@@ -4,89 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="h-3"></div>
-        <header class="bg-gray-main h-11 flex items-center">
-            <div class="container mx-auto px-4 flex items-center  h-full">
+    <div class="wrapper overflow-hidden">
+        <div class="h-3 hidden md:flex"></div>
+        <header class="bg-gray-main h-11 items-center justify-between hidden md:flex">
+            <div class="lg:container mx-auto lg:px-4 px-1 flex items-center h-full">
                 <div class="flex items-center  justify-between h-full">
-                    <div class="flex gap-x-6 mr-20">
-                        <a class="block text-red-main text-sm" href="tel:8004388898">Call:800.438.8898</a>
-                        <a class="flex items-center text-sm font-semibold" href="#">
-                            <img src="src/images/comments-solid.svg" alt="" width="27" height="23">
+                    <div class="flex lg:gap-x-6 gap-x-3  items-center lg:mr-20 mr-3">
+                        <a class="block text-red-main text-xs lg:text-sm" href="tel:8004388898">Call:
+                            <span>800.438.8898</span></a>
+                        <a class="flex items-center  text-xs lg:text-sm  font-semibold" href="#">
+                            <i class="fa-solid fa-comments"></i>
                             Live Chat</a>
                     </div>
 
 
-                    <ul class="h-full flex items-center font-semibold mr-10">
-                        <li class="h-full flex items-center hover:bg-white pl-7 pr-7 border-r border-border-main">
+                    <ul class="h-full flex items-center font-semibold lg:mr-10 mr-5">
+                        <li
+                            class="h-full flex items-center hover:bg-white lg:pl-7 lg:pr-7 pl-2 pr-2 border-r border-border-main">
                             <button class="block">
-                                <img class="w-7 h-6 object-cover" src="src/images/united-states.png" alt="">
+                                <img class="mr-4 w-[33px] h-[24px]" src="src/images/us.svg" alt="" width="33"
+                                    height="24">
                             </button>
                         </li>
                         <li
-                            class="h-full flex items-center hover:bg-white pl-7 pr-7 border-r border-border-main text-sm">
+                            class="h-full flex items-center hover:bg-white lg:pl-7 lg:pr-7 pl-2 pr-2 border-r border-border-main text-xs lg:text-sm">
                             <button>EN</button>
                         </li>
-                        <li class="h-full flex items-center pl-7 pr-7 border-r border-border-main text-sm uppercase">
+                        <li
+                            class="h-full flex items-center lg:pl-7 lg:pr-7 pl-2 pr-2 border-r border-border-main text-xs lg:text-sm uppercase">
                             USD
                         </li>
-                        <li class="h-full flex items-center hover:bg-white pl-7 pr-7 border-r border-border-main"><a
-                                href="#">Multi-SKU
+                        <li
+                            class="h-full flex items-center hover:bg-white lg:pl-7 lg:pr-7 pl-2 pr-2 border-r border-border-main">
+                            <a href="#" class="lg:text-base text-xs text-center">Multi-SKU
                                 Order</a>
                         </li>
-                        <li class="h-full flex items-center hover:bg-white pl-7 pr-7 border-r border-border-main">
-                            <button>Search by
+                        <li
+                            class="h-full flex items-center hover:bg-white lg:pl-7 lg:pr-7 pl-2 pr-2 border-r border-border-main">
+                            <button class="text-xs lg:text-sm">Search by
                                 Serial #</button>
                         </li>
                     </ul>
 
                     <ul class="flex items-center font-semibold gap-x-3 mr-5">
-                        <li class="border-r border-black pr-3"><a class="hover:text-red-main hover:underline"
-                                href="#">Login</a></li>
-                        <li><a class="hover:text-red-main hover:underline" href="#">Register</a></li>
+                        <li class="border-r border-black pr-3"><a
+                                class="hover:text-red-main hover:underline text-xs lg:text-sm" href="#">Login</a></li>
+                        <li><a class="hover:text-red-main hover:underline text-xs lg:text-sm" href="#">Register</a></li>
                     </ul>
 
                     <ul class="h-full flex items-center font-semibold gap-x-4">
                         <li class="h-full flex items-center hover:bg-white cursor-pointer px-1"><a
-                                class="text-red-main flex gap-x-1" href="#">My <img
-                                    src="src/images/location-dot-solid.svg" alt="" width="13" height="18">
+                                class="text-red-main flex gap-x-1 text-xs lg:text-sm" href="#">My
+                                <span><i class="fa-solid fa-location-dot"></i></span>
                             </a></li>
-                        <li><a class="relative" href="#"><img src="src/images/cart-shopping-solid.svg" alt="" width="31"
-                                    height="42">
+                        <li><a class="relative" href="#">
+                                <i class="fa-solid fa-cart-shopping fa-xl"></i>
                                 <span
-                                    class="flex justify-center items-center absolute w-7 h-4 rounded-[50%] top-3 left-2 bg-red-main text-white text-xs">0</span>
+                                    class="flex justify-center items-center absolute w-7 h-4 rounded-[50%] -top-1 left-2 bg-red-main text-white text-xs">0</span>
                             </a></li>
                     </ul>
                 </div>
             </div>
         </header>
 
-        <section class="py-6">
+        <section class="py-6 md:block hidden">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between">
                     <div>
-                        <a href="#"><img src="src/images/logo.png" alt="" width="220" height="120"></a>
+                        <a href="#"><img src="src/images/logo.svg" alt="" width="220" height="120"></a>
                     </div>
-                    <div>
+                    <div class="">
                         <form>
                             <label class="block text-[#2d2926] text-2xl my-6 font-semibold">Find Foodservice Equipment
                                 Parts</label>
                             <div class="flex">
                                 <input class="block py-4 px-5 rounded-xl border-[3px] w-[410px] border-red-main"
-                                    type="search" placeholder="Enter keyword and part">
+                                    type="search" placeholder="Enter keyword and part #">
                                 <button
                                     class="bg-red-main text-white h-16 px-5 rounded-xl rounded-s-none ml-[-25px] focus:outline-white"
                                     type="submit">Search</button>
                             </div>
                         </form>
                     </div>
-                    <div class="sm:col-span-3">
-                        <label for="country" class="block text-sm font-semibold text-[#2d2926]">Find Equipment
+                    <div class="">
+                        <label for="country" class="block lg:text-sm text-xs font-semibold text-[#2d2926]">Find
+                            Equipment
                             Manuals
                         </label>
                         <div class="mt-2">
@@ -122,445 +132,324 @@
             </div>
         </section>
 
-        <div class="h-[6px] bg-hero-pattern"></div>
-        <nav class="bg-[#2d2926]">
-            <div class="container mx-auto px-4">
-                <ul class="flex gap-x-8">
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Shop my
-                            brand</a></li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Shop by
-                            category</a>
-                    </li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Who we are</a>
-                    </li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Resource
-                            center</a></li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Techtown</a>
-                    </li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Track my
-                            order</a></li>
-                    <li><a class="flex items-center  h-11 text-white text-sm font-bold uppercase hover:bg-white hover:text-red-main transition-all"
-                            href="#">Same day
-                            delivery</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="bg-gray-main">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-3">
-                    <div class="flex items-center py-1 my-1">
-                        <div class="mr-8">
-                            <a href="#"><img src="src/images/HVAC_Icon.png" alt="" width="36" height="36"></a>
+        <div class="h-[6px] bg-hero-pattern"></div>
+        <nav class="bg-red-main md:bg-[#2d2926]">
+
+            <!-- Header -->
+            <header class="container px-4 mx-auto">
+                <div class="relative">
+                    <nav aria-label="main navigation" class="flex font-medium text-slate-700" role="navigation">
+                        <!-- Brand logo -->
+
+                        <!-- Mobile trigger -->
+                        <div class="absolute top-0">
+                            <button
+                                class="relative self-center order-1 left-0 visible block w-10 h-10 opacity-100 lg:hidden"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="absolute w-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                    <span aria-hidden="true"
+                                        class="absolute block h-0.5 w-9/12 -translate-y-2 transform rounded-full bg-white transition-all duration-300"></span>
+                                    <span aria-hidden="true"
+                                        class="absolute block h-0.5 w-6 transform rounded-full bg-white transition duration-300"></span>
+                                    <span aria-hidden="true"
+                                        class="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-white transition-all duration-300"></span>
+                                </div>
+                            </button>
                         </div>
-                        <div>
-                            <p class="text-base font-bold mt-1">HVAC Parts Are Here!</p>
-                            <a class="text-sm text-[#646464] hover:text-red-main" href="#">Shop the top brands in the
-                                industry.</a>
+                        <!-- Navigation links -->
+                        <ul role="menubar" aria-label="Select page"
+                            class="flex justify-start lg:gap-x-8 gap-x-4 invisible items-center absolute top-0 left-0 z-[-1] h-screen w-full overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100">
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Shop by
+                                    brand</a></li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Shop by
+                                    category</a>
+                            </li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Who we are</a>
+                            </li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Resource
+                                    center</a></li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Techtown</a>
+                            </li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Track my
+                                    order</a></li>
+                            <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                    href="#">Same day
+                                    delivery</a>
+                            </li>
+                        </ul>
+                        <!-- Actions -->
+                        <div class="flex items-center justify-end  lg:hidden px-6 ml-auto lg:ml-0 lg:flex-1 lg:p-0">
+                            <a href="#" class="text-white">Sign In</a>
+                            <a href="#"
+                                class="relative inline-flex items-center justify-center w-10 h-10 text-lg rounded-full text-emerald-500">
+                                <a class="relative" href="#">
+                                    <i class="fa-solid fa-cart-shopping fa-xl text-white"></i>
+                                    <span
+                                        class="flex justify-center items-center absolute w-7 h-4 rounded-[50%] -top-1 left-2 bg-red-main text-white text-xs">0</span>
+                                </a>
+
+                            </a>
                         </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- End Navbar with Topbar-->
+
+
+
+
+            <!-- <ul class="flex lg:gap-x-8 gap-4">
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Shop by
+                        brand</a></li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Shop by
+                        category</a>
+                </li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Who we are</a>
+                </li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Resource
+                        center</a></li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Techtown</a>
+                </li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Track my
+                        order</a></li>
+                <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                        href="#">Same day
+                        delivery</a>
+                </li>
+            </ul> -->
+    </div>
+    </nav>
+
+    <div class="bg-gray-main">
+        <div class="container mx-auto px-4">
+            <div class="hidden lg:grid lg:grid-cols-3">
+                <div class="flex items-center py-1 my-1">
+                    <div class="mr-8">
+                        <a href="#"><img src="src/images/HVAC_Icon.png" alt="" width="36" height="36"></a>
                     </div>
-                    <div class="flex items-center py-1 my-1">
-                        <div class="mr-8">
-                            <a href="#"><img src="src/images/mobile_global.png" alt="" width=" 36" height="36"></a>
-                        </div>
-                        <div>
-                            <p class="text-base font-bold mt-1">Take Parts Town on the Go!
-                            </p>
-                            <a class="text-sm text-[#646464] hover:text-red-main" href="#">Download the industry's #1
-                                app today!</a>
-                        </div>
+                    <div>
+                        <p class="text-base font-bold mt-1">HVAC Parts Are Here!</p>
+                        <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Shop the top
+                            brands in the
+                            industry.</a>
                     </div>
-                    <div class="flex items-center py-1 my-1">
-                        <div class="mr-8">
-                            <a href="#"><img src="src/images/PIT-logo-pad.png" alt="" width="90" height="36"></a>
-                        </div>
-                        <div>
-                            <p class="text-base font-bold mt-1">Pickup & Delivery in 2-hours or less!
-                            </p>
-                            <a class="text-sm text-[#646464] hover:text-red-main" href="#">Look for this logo to see
-                                parts near you!</a>
-                        </div>
+                </div>
+                <div class="flex items-center py-1 my-1">
+                    <div class="mr-8">
+                        <a href="#"><img src="src/images/mobile_global.png" alt="" width=" 36" height="36"></a>
                     </div>
+                    <div>
+                        <p class="text-base font-bold mt-1">Take Parts Town on the Go!
+                        </p>
+                        <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Download the
+                            industry's #1
+                            app today!</a>
+                    </div>
+                </div>
+                <div class="flex items-center py-1 my-1">
+                    <div class="mr-8">
+                        <a href="#"><img src="src/images/logo.svg" alt="" width="90" height="36"></a>
+                    </div>
+                    <div>
+                        <p class="text-base font-bold mt-1">Pickup & Delivery in 2-hours or less!
+                        </p>
+                        <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Look for this logo
+                            to see
+                            parts near you!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider mobile -->
+
+            <!-- Component: Carousel with controls inside -->
+            <div class="lg:hidden relative w-full glide-04">
+                <!-- Slides -->
+                <div class="overflow-hidden" data-glide-el="track">
+                    <ul
+                        class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                        <li>
+                            <div class="flex items-center py-1 my-1">
+                                <div class="mr-8">
+                                    <a href="#"><img src="src/images/HVAC_Icon.png" alt="" width="36" height="36"></a>
+                                </div>
+                                <div>
+                                    <p class="lg:text-base text-sm font-bold mt-1">HVAC Parts Are Here!</p>
+                                    <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Shop
+                                        the top
+                                        brands in the
+                                        industry.</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center py-1 my-1">
+                                <div class="mr-8">
+                                    <a href="#"><img src="src/images/mobile_global.png" alt="" width=" 36"
+                                            height="36"></a>
+                                </div>
+                                <div>
+                                    <p class="lg:text-base text-sm font-bold mt-1">Take Parts Town on the Go!
+                                    </p>
+                                    <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Download
+                                        the
+                                        industry's #1
+                                        app today!</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center py-1 my-1">
+                                <div class="mr-8">
+                                    <a href="#"><img src="src/images/logo.svg" alt="" width="90" height="36"></a>
+                                </div>
+                                <div>
+                                    <p class="lg:text-base text-sm font-bold mt-1">Pickup & Delivery in 2-hours or
+                                        less!
+                                    </p>
+                                    <a class="lg:text-sm text-xs text-[#646464] hover:text-red-main" href="#">Look
+                                        for this logo
+                                        to see
+                                        parts near you!</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <section class="mt-7 mb-20">
-            <div class="container mx-auto px-4">
-                <h3 class="text-center text-4xl font-bold text-black mb-7">Your Source for Genuine OEM Restaurant
-                    Equipment
-                    Parts
-                </h3>
-                <div class="flex gap-8 justify-between">
-                    <div class="bg-[#2d2926] p-4 w-72">
-                        <p class="text-[17px] text-white text-center mt-4">Find <span class="font-bold">Genuine
-                                OEM</span>
-                            Equipment</p>
-                        <p class="text-[25px] text-white text-center font-bold mb-4">Manuals & Parts</p>
+    <section class="mt-7 mb-20">
+        <div class="container mx-auto px-4">
+            <h3 class="text-center text-4xl font-bold text-black mb-7">Your Source for Genuine OEM Restaurant
+                Equipment
+                Parts
+            </h3>
+            <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-between">
+                <div class="bg-[#2d2926] p-4  md:w-[47%] w-full lg:w-72 lg:order-1 order-2">
+                    <p class="text-[17px] text-white text-center mt-2">Find <span class="font-bold">Genuine
+                            OEM</span>
+                        Equipment</p>
+                    <p class="text-[24px] text-white text-center font-bold mb-3">Manuals & Parts</p>
 
-                        <div class="block w-full text-center ">
-                            <img class="" src="src/images/arrow-start-here--white@2x.png" alt="" width="132"
-                                height="32">
-                        </div>
+                    <div class="block w-full text-center ">
+                        <img class="" src="src/images/arrow-start-here--white@2x.png" alt="" width="132" height="32">
                     </div>
-                    <div class="w-[600px]">
-                        <div class="relative w-full glide-01">
-                            <!-- Slides -->
-                            <div class="overflow-hidden" data-glide-el="track">
-                                <ul
-                                    class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-                                    <li><img src="src/images/slider-1.jpg"
-                                            class="w-full max-w-full max-h-full m-auto" /></li>
-                                    <li><a href="#">
-                                            <img src="src/images/slider-2.jpg"
-                                                class="w-full max-w-full max-h-full m-auto" />
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="src/images/slider-3.jpg"
-                                                class="w-full max-w-full max-h-full m-auto" />
-                                        </a></li>
-                                </ul>
-                            </div>
-                            <!-- Controls -->
-                            <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
-                                data-glide-el="controls">
-                                <button
-                                    class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
-                                    data-glide-dir="<" aria-label="prev slide">
-                                    <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
-                                </button>
-                                <button
-                                    class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute right-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
-                                    data-glide-dir=">" aria-label="next slide">
-                                    <img src="src/images/chevron-right-solid.svg" alt="" width="17" height="25">
-                                </button>
-                            </div>
+                    <div class="border-b border-[#979797]">
+                        <!-- Component: Rounded large basic select -->
+                        <div class="relative my-1">
+                            <select id="id-10" name="id-10" required
+                                class="relative w-full overflow-hidden h-11 px-4 pl-9 transition-all bg-white border rounded-md outline-none appearance-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-emerald-500 focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400">
+                                <option value="" disabled selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label for="id-10"
+                                class="pointer-events-none absolute top-3 left-8 z-[1] px-2 text-base text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-transparent before:transition-all peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-valid:-top-4 peer-valid:text-xs peer-focus:-top-4 peer-focus:text-xs peer-focus:text-emerald-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
+                                Select Brand
+                            </label>
+                            <span
+                                class="flex items-center justify-center font-bold text-white w-8 absolute left-0 top-0 h-full rounded-l-md bg-red-main">
+                                1
+                            </span>
+                            <i
+                                class="fa-solid fa-caret-down pointer-events-none absolute top-3.5 right-2 h-5 w-5 fill-slate-400 transition-all peer-focus:fill-emerald-500 peer-disabled:cursor-not-allowed"></i>
                         </div>
+
+                        <div class="relative my-2">
+                            <select id="id-10" name="id-10" required
+                                class="relative disabled:bg-black w-full overflow-hidden h-11 px-4 pl-9 transition-all bg-white border rounded-md outline-none appearance-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-emerald-500 focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400">
+                                <option value="" disabled selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label for="id-10"
+                                class="pointer-events-none absolute top-3 left-8 z-[1] px-2 text-base text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-transparent before:transition-all peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-valid:-top-4 peer-valid:text-xs peer-focus:-top-4 peer-focus:text-xs peer-focus:text-emerald-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
+                                Select Brand
+                            </label>
+                            <span
+                                class="flex items-center justify-center z-10 font-bold text-white w-8 absolute left-0 top-0 h-full rounded-l-md bg-red-main">
+                                2
+                            </span>
+                            <i
+                                class="fa-solid fa-caret-down pointer-events-none absolute top-3.5 right-2 h-5 w-5 fill-slate-400 transition-all peer-focus:fill-emerald-500 peer-disabled:cursor-not-allowed"></i>
+                        </div>
+                        <!-- End Rounded large basic select -->
                     </div>
-                    <div class="w-72">
-                        <p
-                            class="bg-red-main font-bold text-white text-[24px] text-center py-[17px] px-[15px] leading-6">
-                            Welcome
-                            to the
-                            largest inventory of Real OEM restaurant equipment parts, HVAC parts & more!</p>
-                        <div class="bg-gray-main pb-5">
-                            <ul class="pt-4 pr-4 pb-3 pl-6">
-                                <li class="text-[15px] font-medium flex items-center mb-3"><span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="5" stroke="currentColor"
-                                            class="text-red-main font-bold w-[13px] h-[13px] mr-1">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="m4.5 12.75 6 6 9-13.5" />
-                                        </svg>
 
-                                    </span>
-                                    Always Genuine OEM
-                                </li>
-                                <li class="text-[15px] font-medium flex mb-3"><span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="5" stroke="currentColor"
-                                            class="text-red-main font-bold w-[13px] h-[13px] mr-1 mt-1">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="m4.5 12.75 6 6 9-13.5" />
-                                        </svg>
+                    <div class="pt-5">
+                        <button disabled
+                            class="uppercase text-white bg-[#423e3c] text-lg py-2 rounded-md w-full font-semibold mb-3"
+                            type="button">shop
+                            part</button>
+                        <div class="relative inline-block text-left w-full">
+                            <button id="dropdown-btn" disabled type="button"
+                                class="uppercase  bg-[#423e3c] text-lg py-2 w-full font-bold inline-flex justify-center items-center  px-1   text-white bg-transparent rounded-md focus:outline-none focus:ring active:bg-[#69696D]">
+                                <span>
+                                    GET MANUALS
+                                </span>
+                                <!-- Heroicon name: chevron-down -->
+                                <i class="fa-solid fa-caret-down w-5 h-5 ml-2 mr-1"></i>
+                            </button>
 
-                                    </span>
-                                    The Most In-Stock Parts on the Planet
-                                </li>
-                                <li class="text-[15px] font-medium flex items-center mb-3"><span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="5" stroke="currentColor"
-                                            class="text-red-main font-bold w-[13px] h-[13px] mr-1">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="m4.5 12.75 6 6 9-13.5" />
-                                        </svg>
+                            <div id="dropdown-content"
+                                class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[#2d2926] ring-1 ring-black ring-opacity-5">
+                                <!-- Dropdown content goes here -->
+                                <div class="p-1">
+                                    <div class="p-2">
+                                        <input class="block w-full bg-white rounded-md text-sm py-1 px-2" type="search"
+                                            name="search" id="" placeholder="Country Name...">
+                                    </div>
+                                    <a href="#" class="flex px-4 py-2 underline text-white"> <img class="mr-4"
+                                            src="src/images/us.svg" alt="" width="33" height="24"> United
+                                        States</a>
+                                    <a href="#" class="flex px-4 py-2 underline text-white"> <img class="mr-4"
+                                            src="src/images/andorra.svg" alt="" width="33" height="24">Andorra</a>
 
-                                    </span>
-                                    Same Day Shipping
-                                </li>
-                            </ul>
-                            <div class="mb-3">
-                                <img class="mx-auto" src="src/images/let-start.png" alt="" width="200" height="30">
-                            </div>
-                            <div class="flex items-center justify-center gap-[10px]">
-                                <a class="block text-center bg-red-main text-white rounded-md w-28 py-[10px] uppercase px-1 text-[14px] font-semibold hover:drop-shadow-2xl transition-all"
-                                    href="#">Login</a>
-                                <a class="block text-center bg-[#2d2926] text-white rounded-md w-28 py-[10px] uppercase px-1 text-[14px] font-semibold hover:drop-shadow-2xl transition-all"
-                                    href="#">Register</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="mb-20">
-            <div class="container mx-auto px-4">
-                <div>
-                    <img src="src/images/shipping-banner.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container mx-auto px-4">
-                <div class="flex items-center">
-                    <div class="w-1/4 mx-auto">
-                        <a class="block mx-auto mb-5" href="#"><img class="mx-auto"
-                                src="src/images/trustpilot-logo-png-data.png" alt="" width="152" height="71"></a>
-                        <p class="text-lg text-center text-[#53565a] font-medium">TrustPilot Customer Reviews </p>
-                    </div>
-                    <div class="w-3/4">
-                        <div class="relative w-full glide-02">
-                            <!-- Slides -->
-                            <div class="overflow-hidden" data-glide-el="track">
-                                <ul
-                                    class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-                                    <li>
-                                        <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
-                                            href="#">
-                                            <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
-                                                width="140" height="26">
-                                            <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
-                                            <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
-                                            <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
-                                            <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
-                                            href="#">
-                                            <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
-                                                width="140" height="26">
-                                            <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
-                                            <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
-                                            <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
-                                            <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
-                                            href="#">
-                                            <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
-                                                width="140" height="26">
-                                            <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
-                                            <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
-                                            <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
-                                            <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
-                                            href="#">
-                                            <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
-                                                width="140" height="26">
-                                            <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
-                                            <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
-                                            <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
-                                            <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
-                                            href="#">
-                                            <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
-                                                width="140" height="26">
-                                            <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
-                                            <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
-                                            <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
-                                            <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <!-- Controls -->
-                            <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
-                                data-glide-el="controls">
-                                <button
-                                    class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-330px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
-                                    data-glide-dir="<" aria-label="prev slide">
-                                    <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
-                                </button>
-                                <button
-                                    class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute right-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
-                                    data-glide-dir=">" aria-label="next slide">
-                                    <img src="src/images/chevron-right-solid.svg" alt="" width="17" height="25">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="h-[2px] w-full bg-gray-main mt-10 mb-10"></div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold text-[#2d2926]  mb-6"><span
-                        class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">SHOP</span>
-                    BY
-                    <span class="text-red-main">CATEGORY</span>
-                </h2>
-
-                <div class="flex gap-x-2">
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3 ">
-                            <img class="" src="src/images/ice.png" alt="" width="48" height="76">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">Ice</p>
-                            <span class="text-sm">Machine Parts</span>
-                        </div>
-                    </a>
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/refri.png" alt="" width="48" height="76">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                Refrigeration</p>
-                            <span class="text-sm">Equipment Parts</span>
-                        </div>
-                    </a>
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/oven.png" alt="" width="70" height="70">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                Oven</p>
-                            <span class="text-sm">& Range Parts</span>
-                        </div>
-                    </a>
-
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/hvac.png" alt="" width="79" height="75">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                HVAC</p>
-                            <span class="text-sm">Parts</span>
-                        </div>
-                    </a>
-
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/home-app.png" alt="" width="66" height="75">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                Home Appliance</p>
-                            <span class="text-sm">Parts</span>
-                        </div>
-                    </a>
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/laundry.png" alt="" width="66" height="75">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                Laundry</p>
-                            <span class="text-sm">Parts</span>
-                        </div>
-                    </a>
-                    <a class="basis-[14%] flex flex-col items-center hover:border-2 hover:border-red-main hover:shadow-lg p-4 duration-200 border-2 border-white"
-                        href="#">
-                        <div class="flex justify-center w-20 h-[76px] mb-3">
-                            <img class="" src="src/images/view-all.png" alt="" width="63" height="50">
-                        </div>
-                        <div class="text-lg text-[#53565a] text-center">
-                            <p class="font-bold">
-                                View All</p>
-                            <span class="text-sm">Categories</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="h-[2px] w-full bg-gray-main mt-10 mb-10"></div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold text-[#2d2926]  mb-6"><span
-                        class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">SHOP</span>
-                    BY
-                    <span class="text-red-main">BRAND</span>
-                </h2>
-
-                <div class="w-full">
-                    <div class="relative w-full glide-03">
+                <div class="lg:w-[600px] w-full order-1 lg:order-2">
+                    <div class="relative w-full glide-01">
                         <!-- Slides -->
                         <div class="overflow-hidden" data-glide-el="track">
                             <ul
                                 class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-                                <li class="flex gap-y-4 flex-col">
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/henny_penny.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/hoshizaki.png" alt="">
-                                        </a>
-                                    </div>
+                                <li><img src="src/images/slider-1.jpg" class="w-full max-w-full max-h-full m-auto" />
                                 </li>
-                                <li class="flex gap-y-4 flex-col">
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/imperial_brown.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/jet_tech.png" alt="">
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li class="flex gap-y-4 flex-col">
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/Lincoln_Black.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="h-28">
-                                        <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
-                                            href="#">
-                                            <img src="src/images/master-bilt.png" alt="">
-                                        </a>
-                                    </div>
-                                </li>
-
+                                <li><a href="#">
+                                        <img src="src/images/slider-2.jpg"
+                                            class="w-full max-w-full max-h-full m-auto" />
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="src/images/slider-3.jpg"
+                                            class="w-full max-w-full max-h-full m-auto" />
+                                    </a></li>
                             </ul>
                         </div>
                         <!-- Controls -->
-                        <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
+                        <div class="hidden absolute left-0 lg:flex items-center justify-between w-full h-0 px-4 top-1/2 "
                             data-glide-el="controls">
                             <button
-                                class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-23px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                                class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
                                 data-glide-dir="<" aria-label="prev slide">
                                 <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
                             </button>
@@ -572,107 +461,1173 @@
                         </div>
                     </div>
                 </div>
+                <div class="md:w-[47%] w-full lg:w-72 order-3 lg:order-3">
+                    <p class="bg-red-main font-bold text-white text-[24px] text-center py-[17px] px-[15px] leading-6">
+                        Welcome
+                        to the
+                        largest inventory of Real OEM restaurant equipment parts, HVAC parts & more!</p>
+                    <div class="bg-gray-main pb-5">
+                        <ul class="pt-4 pr-4 pb-3 pl-6">
+                            <li class="text-[15px] font-medium flex items-center mb-3"><span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="5" stroke="currentColor"
+                                        class="text-red-main font-bold w-[13px] h-[13px] mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m4.5 12.75 6 6 9-13.5" />
+                                    </svg>
 
-            </div>
-        </section>
+                                </span>
+                                Always Genuine OEM
+                            </li>
+                            <li class="text-[15px] font-medium flex mb-3"><span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="5" stroke="currentColor"
+                                        class="text-red-main font-bold w-[13px] h-[13px] mr-1 mt-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m4.5 12.75 6 6 9-13.5" />
+                                    </svg>
 
+                                </span>
+                                The Most In-Stock Parts on the Planet
+                            </li>
+                            <li class="text-[15px] font-medium flex items-center mb-3"><span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="5" stroke="currentColor"
+                                        class="text-red-main font-bold w-[13px] h-[13px] mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m4.5 12.75 6 6 9-13.5" />
+                                    </svg>
 
-        <section class="py-14">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center">
-                    <h2 class="text-2xl font-bold text-[#2d2926] uppercase  mb-6"><span
-                            class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">Resource</span>
-                        BY
-                        <span class="text-red-main">CENTER</span>
-                    </h2>
-                    <a class="text-sm text-[#3b4040] underline" href="#">See All Resources</a>
-                </div>
-
-                <div class="grid grid-cols-4 gap-4">
-                    <a href="#"
-                        class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
-                        <!--  Image -->
-                        <figure>
-                            <img src="src/images/picture-hobart-dishwasher-error-codes.png" alt="card image"
-                                class="h-32 w-full" />
-                        </figure>
-                        <!-- Body-->
-                        <div class="p-6">
-                            <header>
-                                <h3 class="text-lg text-[#2d2926] font-bold">Hobart Dishwasher Error Codes</h3>
-                            </header>
+                                </span>
+                                Same Day Shipping
+                            </li>
+                        </ul>
+                        <div class="mb-7">
+                            <img class="mx-auto" src="src/images/let-start.png" alt="" width="200" height="30">
                         </div>
-                    </a>
-                    <a href="#"
-                        class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
-                        <!--  Image -->
-                        <figure>
-                            <img src="src/images/image-how-to-clean-a-commercial-griddle.jpg" alt="card image"
-                                class="h-32 w-full" />
-                        </figure>
-                        <!-- Body-->
-                        <div class="p-6">
-                            <header>
-                                <h3 class="text-lg text-[#2d2926] font-bold">
-                                    How to Clean a Commercial Flat Top Griddle or Plancha</h3>
-                            </header>
+                        <div class="flex items-center justify-center gap-[10px]">
+                            <a class="block text-center bg-red-main text-white rounded-md w-28 py-[10px] uppercase px-1 text-[14px] font-semibold hover:drop-shadow-2xl transition-all"
+                                href="#">Login</a>
+                            <a class="block text-center bg-[#2d2926] text-white rounded-md w-28 py-[10px] uppercase px-1 text-[14px] font-semibold hover:drop-shadow-2xl transition-all"
+                                href="#">Register</a>
                         </div>
-                    </a>
-
-                    <a href="#"
-                        class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
-                        <!--  Image -->
-                        <figure>
-                            <img src="src/images/picture.jpg" alt="card image" class="h-32 w-full" />
-                        </figure>
-                        <!-- Body-->
-                        <div class="p-6">
-                            <header>
-                                <h3 class="text-lg text-[#2d2926] font-bold">
-                                    Manitowoc Ice Machine Troubleshooting</h3>
-                            </header>
-                        </div>
-                    </a>
-                    <a href="#"
-                        class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
-                        <!--  Image -->
-                        <figure>
-                            <img src="src/images/pitco.png" alt="card image" class="h-32 w-full" />
-                        </figure>
-                        <!-- Body-->
-                        <div class="p-6">
-                            <header>
-                                <h3 class="text-lg text-[#2d2926] font-bold">
-                                    How to Program a Pitco Fryer</h3>
-                            </header>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bg-[url('./src/images/red-bg.jpg')] py-16 bg-cover">
-            <div class="container mx-auto px-4">
-                <div>
-                    <h2 class="text-[32px] text-center font-medium text-white mb-[25px]">Get Special Offers & News From
-                        Parts Town
-                    </h2>
+    <section class="">
+        <div class="container mx-auto px-4">
+            <div>
+                <img src="src/images/shipping-banner.jpg" alt="">
+            </div>
+        </div>
+    </section>
 
-                    <form>
-                        <div class="text-center">
-                            <input
-                                class="rounded-md bg-white pt-[10px] max-w-[550px] w-full pr-16 pb-[10px] pl-[10px] mr-3"
-                                type="email" placeholder="Enter Your Email Address">
-                            <button type="submit"
-                                class="bg-black text-white rounded-md w-full max-w-[200px] py-[11px]">I
-                                WINT
-                                IN</button>
+    <section class="relative pt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center">
+                <div
+                    class="md:block flex gap-3 items-center lg:w-1/4 w-full md:mx-auto mx-0 absolute md:static top-0 left-0 z-20 pl-4 md:p-0">
+                    <a class="block md:mx-auto mx-0 mb-5" href="#">
+                        <img class="mx-auto" src="src/images/trustpilot-logo-png-data.png" alt="" width="152"
+                            height="71">
+                    </a>
+                    <p class="text-lg text-center text-[#53565a] font-medium">TrustPilot Customer Reviews </p>
+                </div>
+                <div class="lg:w-3/4 md:w-2/3 w-full">
+                    <div class="relative w-full glide-02">
+                        <!-- Slides -->
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul
+                                class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                                <li>
+                                    <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
+                                        href="#">
+                                        <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
+                                            width="140" height="26">
+                                        <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
+                                        <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
+                                        <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
+                                        <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
+                                        href="#">
+                                        <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
+                                            width="140" height="26">
+                                        <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
+                                        <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
+                                        <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
+                                        <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
+                                        href="#">
+                                        <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
+                                            width="140" height="26">
+                                        <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
+                                        <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
+                                        <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
+                                        <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
+                                        href="#">
+                                        <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
+                                            width="140" height="26">
+                                        <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
+                                        <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
+                                        <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
+                                        <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="block p-4 pb-9 border-[2px] border-gray-main hover:border-red-main hover:drop-shadow-lg duration-300"
+                                        href="#">
+                                        <img class="block mb-3" src="src/images/green-star.png" alt="" class=""
+                                            width="140" height="26">
+                                        <div class="text-[12px] text-[#676d6d] mb-5">1.21.2024</div>
+                                        <div class="text-[14px] text-[#2d2926] mb-2">Great service</div>
+                                        <div class="text-[14px] text-[#676d6d] mb-2">Great service</div>
+                                        <div class="text-[12px] text-[#53565a]">Daniel Lopez</div>
+                                    </a>
+                                </li>
+
+                            </ul>
                         </div>
-                    </form>
+                        <!-- Controls -->
+                        <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
+                            data-glide-el="controls">
+                            <button
+                                class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute md:-left-[270px] -left-[20px] lg:left-[-330px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                                data-glide-dir="<" aria-label="prev slide">
+                                <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
+                            </button>
+                            <button
+                                class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute right-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                                data-glide-dir=">" aria-label="next slide">
+                                <img src="src/images/chevron-right-solid.svg" alt="" width="17" height="25">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div class="h-[6px] bg-hero-pattern"></div>
+
+            <div class="h-[2px] w-full bg-gray-main mt-10 mb-10"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#2d2926]  mb-6"><span
+                    class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">SHOP</span>
+                BY
+                <span class="text-red-main">CATEGORY</span>
+            </h2>
+
+            <div class="lg:flex lg:flex-nowrap flex-wrap gap-2 grid md:grid-cols-4 grid-cols-1">
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex md:justify-center justify-start md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3 ">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/ice.png" alt=""
+                            width="48" height="76">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">Ice</p>
+                        <span class="text-sm font-bold">Machine Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] text-left mr-4" src="src/images/refri.png"
+                            alt="" width="48" height="76">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            Refrigeration</p>
+                        <span class="text-sm font-bold">Equipment Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/oven.png" alt=""
+                            width="70" height="70">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            Oven</p>
+                        <span class="text-sm font-bold">& Range Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/hvac.png" alt=""
+                            width="79" height="75">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            HVAC</p>
+                        <span class="text-sm font-bold">Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/home-app.png" alt=""
+                            width="66" height="75">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            Home Appliance</p>
+                        <span class="text-sm font-bold">Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/laundry.png" alt=""
+                            width="66" height="75">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            Laundry</p>
+                        <span class="text-sm font-bold">Parts</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+                <a class="basis-[14%] flex md:flex-col flex-row items-center border-[1px] border-[#d9d9d6] hover:border-2 rounded-md hover:border-red-main hover:shadow-lg md:p-4 py-2 px-4 duration-200 lg:border-2 lg:border-white"
+                    href="#">
+                    <div class="flex justify-center md:w-20 md:h-[76px] w-[30px] h-[30px] mb-3">
+                        <img class="md:w-auto md:h-auto w-[18px] h-[28px] mr-4" src="src/images/view-all.png" alt=""
+                            width="63" height="50">
+                    </div>
+                    <div class="text-lg text-[#53565a] md:text-center text-left">
+                        <p class="font-bold text-base">
+                            View All</p>
+                        <span class="text-sm font-bold">Categories</span>
+                    </div>
+                    <span class="block md:hidden ml-auto">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+
+            <div class="h-[2px] w-full bg-gray-main mt-10 mb-10"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#2d2926]  mb-6"><span
+                    class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">SHOP</span>
+                BY
+                <span class="text-red-main">BRAND</span>
+            </h2>
+
+            <div class="w-full">
+                <div class="relative w-full glide-03">
+                    <!-- Slides -->
+                    <div class="overflow-hidden" data-glide-el="track">
+                        <ul
+                            class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/henny_penny.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/hoshizaki.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/imperial_brown.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/jet_tech.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Lincoln_Black.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/master-bilt.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/montague.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/hobart.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/hussmann.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/jade.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/lang.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/manitowoc-iceLogo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/middleby.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/nieco.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/norlake.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/perlick.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/pitco.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/prince_castle.jpeg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/randell.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/robot_coupe_mfg_logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/royal_range.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/scotsman.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/server.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/silver_king.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Southbend_Range.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/star_range.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/traulsen.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/true.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/turbo_air.gif" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/ultrafryer.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/vulcan_hart.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/wells.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Winston.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/yorklogo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/AccurexManufacturerLogo.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/AccuTemp-Logo_with-Descriptor_for-white-backgrn-1-.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Alto-Shaam-logo-red-black_052023.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/american_range.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/anets.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/antunes.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/APWlogo-Revised.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Atlas-Metal-updated-Logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/BakersPride-LogoRevised.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/beverage_air.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/bevles.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/BKI-Logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/blodgett.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Bunn.jpg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/grindmaster.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Cleveland_Black_Logo.jpeg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/New_Crathco_Thumbnail.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/cres_cor.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Delfield_Blue.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/doughpro_proluxe.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/duke.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/ELX-Electrolux_Professional_logo_master_blue_RGB.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Frymaster_Black.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/Garland_Black.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/globe.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/grindmasterlogo.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-y-4 flex-col">
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/groen.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="h-28">
+                                    <a class="h-full flex items-center justify-center border py-2 px-3 hover:border-red-main hover:border-2 duration-200"
+                                        href="#">
+                                        <img src="src/images/hatco.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Controls -->
+                    <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
+                        data-glide-el="controls">
+                        <button
+                            class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-23px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                            data-glide-dir="<" aria-label="prev slide">
+                            <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute right-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                            data-glide-dir=">" aria-label="next slide">
+                            <img src="src/images/chevron-right-solid.svg" alt="" width="17" height="25">
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-14">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-[#2d2926] uppercase  mb-6"><span
+                        class="pb-1 relative after:absolute after:bottom-[-5px] after:left-0 after:content-[''] after:h-1 after:w-12 after:bg-red-main">Resource</span>
+                    BY
+                    <span class="text-red-main">CENTER</span>
+                </h2>
+                <a class="text-sm text-[#3b4040] underline" href="#">See All Resources</a>
+            </div>
+
+            <div class="hidden lg:grid grid-cols-4 gap-4">
+                <a href="#" class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                    <!--  Image -->
+                    <figure>
+                        <img src="src/images/picture-hobart-dishwasher-error-codes.png" alt="card image"
+                            class="h-32 w-full" />
+                    </figure>
+                    <!-- Body-->
+                    <div class="p-6">
+                        <header>
+                            <h3 class="lg:text-lg text-base text-[#2d2926] font-bold">Hobart Dishwasher Error Codes
+                            </h3>
+                        </header>
+                    </div>
+                </a>
+                <a href="#" class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                    <!--  Image -->
+                    <figure>
+                        <img src="src/images/image-how-to-clean-a-commercial-griddle.jpg" alt="card image"
+                            class="h-32 w-full" />
+                    </figure>
+                    <!-- Body-->
+                    <div class="p-6">
+                        <header>
+                            <h3 class="lg:text-lg text-base text-[#2d2926] font-bold">
+                                How to Clean a Commercial Flat Top Griddle or Plancha</h3>
+                        </header>
+                    </div>
+                </a>
+
+                <a href="#" class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                    <!--  Image -->
+                    <figure>
+                        <img src="src/images/picture.jpg" alt="card image" class="h-32 w-full" />
+                    </figure>
+                    <!-- Body-->
+                    <div class="p-6">
+                        <header>
+                            <h3 class="lg:text-lg text-base text-[#2d2926] font-bold">
+                                Manitowoc Ice Machine Troubleshooting</h3>
+                        </header>
+                    </div>
+                </a>
+                <a href="#" class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                    <!--  Image -->
+                    <figure>
+                        <img src="src/images/pitco.png" alt="card image" class="h-32 w-full" />
+                    </figure>
+                    <!-- Body-->
+                    <div class="p-6">
+                        <header>
+                            <h3 class="text-lg text-[#2d2926] font-bold">
+                                How to Program a Pitco Fryer</h3>
+                        </header>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- Slider -->
+            <!-- Component: Carousel with controls inside -->
+            <div class="relative w-full glide-05">
+                <!-- Slides -->
+                <div class="overflow-hidden" data-glide-el="track">
+                    <ul
+                        class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                        <li>
+                            <a href="#"
+                                class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                                <!--  Image -->
+                                <figure>
+                                    <img src="src/images/picture-hobart-dishwasher-error-codes.png" alt="card image"
+                                        class="h-32 w-full" />
+                                </figure>
+                                <!-- Body-->
+                                <div class="p-6">
+                                    <header>
+                                        <h3 class="text-lg text-[#2d2926] font-bold">Hobart Dishwasher Error Codes
+                                        </h3>
+                                    </header>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#"
+                                class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                                <!--  Image -->
+                                <figure>
+                                    <img src="src/images/image-how-to-clean-a-commercial-griddle.jpg" alt="card image"
+                                        class="h-32 w-full" />
+                                </figure>
+                                <!-- Body-->
+                                <div class="p-6">
+                                    <header>
+                                        <h3 class="text-lg text-[#2d2926] font-bold">
+                                            How to Clean a Commercial Flat Top Griddle or Plancha</h3>
+                                    </header>
+                                </div>
+                            </a></li>
+                        <li>
+                            <a href="#"
+                                class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                                <!--  Image -->
+                                <figure>
+                                    <img src="src/images/picture.jpg" alt="card image" class="h-32 w-full" />
+                                </figure>
+                                <!-- Body-->
+                                <div class="p-6">
+                                    <header>
+                                        <h3 class="text-lg text-[#2d2926] font-bold">
+                                            Manitowoc Ice Machine Troubleshooting</h3>
+                                    </header>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block border-2 hover:border-red-main hover:border-2 hover:shadow-lg duration-200">
+                                <!--  Image -->
+                                <figure>
+                                    <img src="src/images/pitco.png" alt="card image" class="h-32 w-full" />
+                                </figure>
+                                <!-- Body-->
+                                <div class="p-6">
+                                    <header>
+                                        <h3 class="text-lg text-[#2d2926] font-bold">
+                                            How to Program a Pitco Fryer</h3>
+                                    </header>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Controls -->
+                <div class="absolute left-0 lg:flex items-center justify-between w-full h-0 px-4 top-1/2 "
+                    data-glide-el="controls">
+                    <button
+                        class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute left-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                        data-glide-dir="<" aria-label="prev slide">
+                        <img src="src/images/chevron-left-solid.svg" alt="" width="17" height="25">
+                    </button>
+                    <button
+                        class="inline-flex items-center justify-center w-[38px] h-[48px] transition duration-300 border-0 absolute right-[-20px] rounded text-slate-700  hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-red-main"
+                        data-glide-dir=">" aria-label="next slide">
+                        <img src="src/images/chevron-right-solid.svg" alt="" width="17" height="25">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[url('./src/images/red-bg.jpg')] py-16 bg-cover">
+        <div class="container mx-auto px-4">
+            <div>
+                <h2 class="text-[26px] lg:text-[32px] text-center font-medium text-white mb-[25px]">Get Special
+                    Offers & News From
+                    Parts Town
+                </h2>
+
+                <form>
+                    <div class="text-center flex lg:block">
+                        <input
+                            class="rounded-md bg-white pt-[10px] lg:max-w-[550px] w-full pr-16 pb-[10px] pl-[10px] mr-3"
+                            type="email" placeholder="Enter Your Email Address">
+                        <button type="submit" class="bg-black text-white rounded-md w-full max-w-[200px] py-[11px]">I
+                            WINT IN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="h-[6px] bg-hero-pattern"></div>
+
+    <footer class="bg-[#2d2926] pt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center relative">
+                <a href="#" class="block mb-12">
+                    <img src="src/images/footer-logo-2005.svg" alt="" width="160" height="68">
+                </a>
+                <div class="flex gap-6 mb-10">
+                    <a href="tel:8004388898" class="flex text-white text-sm">
+                        <i class="fa-solid fa-phone-flip mr-2 text-base mt-[-2px]"></i>
+                        800.438.8898
+                    </a>
+                    <a href="#" class="flex text-white text-sm">
+                        <i class="fa-solid fa-comments text-white text-base mr-2 mt-[-2px]"></i>
+                        Live Chat
+                    </a>
+                </div>
+                <div class="mb-10">
+                    <button class="absolute left-0 top-0" type="button">
+                        <img class="lg:block hidden" src="src/images/robot.png" alt="Robot" width="275" height="326">
+                    </button>
+                    <ul class="flex gap-3">
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-brands fa-facebook-f group-hover:text-white"></i></a></li>
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-brands fa-twitter group-hover:text-white"></i></a></li>
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-brands fa-youtube group-hover:text-white"></i></a></li>
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-brands fa-instagram group-hover:text-white"></i></a></li>
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-brands fa-pinterest-p group-hover:text-white"></i></a></li>
+                        <li><a href="#"
+                                class="flex items-center group hover:bg-red-main duration-200 justify-center text-lg w-9 h-9 bg-white rounded-md p-[5px]"><i
+                                    class="fa-solid fa-star group-hover:text-white"></i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="flex gap-14 pt-10 mb-10">
+                    <ul>
+                        <li class="text-base font-bold mb-6 uppercase text-white">HELP DESK</li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">Contact Us</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">Shipping</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Taxes
+                                And Fees</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">Returns</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 hover:underline" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="text-base font-bold mb-6 uppercase text-white">INSIDE PARTS TOWN </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">About
+                                Us</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">Careers </a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Our
+                                Difference</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">Resource
+                                Center</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Parts
+                                Town
+                                Blog</a></li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline"
+                                href="#">techtown</a></li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 hover:underline"
+                                href="#">International</a></li>
+                    </ul>
+                    <ul>
+                        <li class="text-base font-bold mb-6 uppercase text-white"><a href="#">TECHNOLOGY AND <br>
+                                INNOVATIONS
+                            </a></li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Parts
+                                Town App</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Parts
+                                In Town</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Serial
+                                Number
+                                Lookup
+                            </a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 mb-3 hover:underline" href="#">Smart
+                                Manuals</a>
+                        </li>
+                        <li><a class="text-sm text-[#d2d2d2] capitalize opacity-85 hover:underline" href="#">Website
+                                Features</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="h-[85px] bg-red-main">
+    </div>
+
+    <div class="bg-[#2d2926] pt-28 relative">
+        <div class="container mx-auto px-4 ">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center md:block md:mr-40 mr-0 lg:order-1 order-2">
+                    <p class="text-[#8c9497] font-medium text-sm md:mb-3 mb-1">© 2024 Parts Town. All rights reserved.
+                    </p>
+                    <ul class="flex flex-col md:flex-row items-center md:gap-8 gap-2 mb-2">
+                        <li><a class="text-[#edeeee] text-sm font-medium hover:text-red-main" href="#">Terms of
+                                Use</a>
+                        </li>
+                        <li><a class="text-[#edeeee] text-sm font-medium hover:text-red-main" href="">Privacy
+                                Policy</a>
+                        </li>
+                        <li><a class="text-[#edeeee] text-sm font-medium  " href=""><i
+                                    class="fa-solid fa-universal-access group:hover:text-white"></i> <span
+                                    class="hover:text-red-main">Accessibility</span> </a>
+                        </li>
+                        <li><a href="#"
+                                title="Please be aware that the content in the rating widget and the User Way menu is provided by a third party, and we cannot guarantee its accessibility."><i
+                                    class="fa-solid fa-circle-info text-white"></i></a></li>
+                    </ul>
+
+                    <ul class="flex flex-col md:flex-row items-center md:gap-8 gap-2 ">
+                        <li><a class="text-[#edeeee] text-sm font-medium hover:text-red-main" href="#">Do Not Sell
+                                My
+                                Personal Information</a>
+                        </li>
+                        <li><a class="text-[#edeeee] text-sm font-medium hover:text-red-main" href="">Privacy
+                                Request</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:order-2 order-1 absolute lg:static top-10 ">
+                    <ul class="flex items-center gap-4">
+                        <li class="w-20 h-10"><img src="src/images/visa.png" alt="" class="w-full h-full"></li>
+                        <li class="w-20 h-10"><img src="src/images/mastercard.png" alt="" class="w-full h-full">
+                        </li>
+                        <li class="w-20 h-10"><img src="src/images/express.png" alt="" class="w-full h-full"></li>
+                        <li class="w-20 h-10"><img src="src/images/discover.png" alt="" class="w-full h-full"></li>
+                        <li class="w-20 h-10"><img src="src/images/paypal.png" alt="" class="w-full h-full"></li>
+                    </ul>
+                </div>
+
+                <div class="order-3 lg:order-3 mt-3 md:mt-0">
+                    <div class="relative inline-block text-left">
+                        <button id="dropdown-btn" type="button"
+                            class="inline-flex justify-center items-center w-[150px] px-1  text-sm font-medium text-white bg-transparent border border-[#69696d] rounded-md  focus:outline-none focus:ring active:bg-[#69696D]">
+                            <div class="flex items-center px-1 py-2 text-white"> <img class="mr-4 w-[33px] h-[24px]"
+                                    src="src/images/us.svg" alt="" width="33" height="24">
+                                <span>United
+                                    States</span>
+                            </div>
+                            <!-- Heroicon name: chevron-down -->
+                            <i class="fa-solid fa-caret-down w-5 h-5 ml-2 mr-1"></i>
+                        </button>
+
+                        <div id="dropdown-content"
+                            class="hidden origin-top-right absolute left-1-0 -top-36 mt-2 w-48 rounded-md shadow-lg bg-[#2d2926] ring-1 ring-black ring-opacity-5">
+                            <!-- Dropdown content goes here -->
+                            <div class="p-1">
+                                <div class="p-2">
+                                    <input class="block w-full bg-white rounded-md text-sm py-1 px-2" type="search"
+                                        name="search" id="" placeholder="Country Name...">
+                                </div>
+                                <a href="#" class="flex px-4 py-2 underline text-white"> <img class="mr-4"
+                                        src="src/images/us.svg" alt="" width="33" height="24"> United
+                                    States</a>
+                                <a href="#" class="flex px-4 py-2 underline text-white"> <img class="mr-4"
+                                        src="src/images/andorra.svg" alt="" width="33" height="24">Andorra</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
 
