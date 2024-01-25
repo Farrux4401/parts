@@ -110,3 +110,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Fixed menu
+var navbar = document.querySelector(".menu-block");
+var sticky = navbar.offsetTop;
+
+window.onscroll = function () {
+  var menuContent = document.getElementById("menu-content");
+  var originalMenu = document.getElementById("originalMenu");
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("fixed");
+    document.body.style.paddingTop = navbar.offsetHeight + "px";
+    // Add a class to menu content when fixed
+    menuContent.style.display = "flex";
+    originalMenu.style.display = "none";
+  } else {
+    navbar.classList.remove("fixed");
+    document.body.style.paddingTop = 0;
+    // Remove the added class when not fixed
+    menuContent.style.display = "";
+    originalMenu.style.display = "flex";
+  }
+};

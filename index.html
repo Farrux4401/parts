@@ -134,7 +134,7 @@
 
 
         <div class="h-[6px] bg-hero-pattern"></div>
-        <nav class="bg-red-main md:bg-[#2d2926]">
+        <nav class="bg-red-main md:bg-[#2d2926] menu-block z-40 top-0 w-full transition-all">
 
             <!-- Header -->
             <header class="container px-4 mx-auto">
@@ -158,7 +158,61 @@
                             </button>
                         </div>
                         <!-- Navigation links -->
-                        <ul role="menubar" aria-label="Select page"
+
+                        <div class="md:block hidden w-full">
+                            <div id="menu-content" class="hidden items-center w-full py-2">
+                                <div class="fixed-menu mr-14">
+                                    <a href="#"><img src="src/images/logo.svg" alt="" width="140" height="20"></a>
+                                </div>
+
+                                <ul role="menubar" aria-label="Select page"
+                                    class="flex justify-start lg:gap-x-20 gap-x-4 invisible items-center absolute top-0 left-0 z-[-1]  w-full overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex  lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100">
+                                    <li><a class="flex items-center text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                            href="#">Shop by
+                                            brand</a></li>
+                                    <li><a class="flex items-center text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
+                                            href="#">Shop by
+                                            category</a>
+                                    </li>
+                                </ul>
+
+                                <form class="ml-auto mr-3">
+                                    <div class="flex">
+                                        <input
+                                            class="block py-1 px-5 rounded-xl border-[3px] w-[310px] border-red-main focus-visible:outline-none"
+                                            type="search" placeholder="">
+                                        <button
+                                            class="bg-red-main text-white px-5 rounded-xl rounded-s-none ml-[-25px] focus:outline-white"
+                                            type="submit">Search</button>
+                                    </div>
+                                </form>
+
+                                <ul class="h-full flex items-center font-semibold gap-x-4">
+                                    <li
+                                        class="h-full flex items-center relative  group  hover:bg-white cursor-pointer px-1">
+                                        <a class="text-[#646464] flex gap-x-1 text-xs lg:text-sm py-2" href="#">
+                                            <span><i class="fa-solid fa-circle-user fa-2xl"></i></span>
+                                        </a>
+
+                                        <div
+                                            class="hidden group-hover:flex gap-4 flex-col absolute z-30 bg-white p-3 shadow-xl top-10 w-36 -left-20">
+                                            <a href="#">Login</a>
+                                            <a href="#">Register</a>
+                                        </div>
+
+                                    </li>
+                                    <li><a class="relative" href="#">
+                                            <i class="fa-solid fa-cart-shopping fa-xl text-white"></i>
+                                            <span
+                                                class="flex justify-center items-center absolute w-7 h-4 rounded-[50%] -top-1 left-2 bg-red-main text-white text-xs">0</span>
+                                        </a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                        <ul role="menubar" aria-label="Select page" id="originalMenu"
                             class="flex justify-start lg:gap-x-8 gap-x-4 invisible items-center absolute top-0 left-0 z-[-1] h-screen w-full overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100">
                             <li><a class="flex items-center  h-11 text-white lg:text-sm text-xs font-bold uppercase hover:bg-white hover:text-red-main transition-all"
                                     href="#">Shop by
